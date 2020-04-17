@@ -4,21 +4,23 @@
   box-sizing: border-box;
 }
 
-body {
-  font-size: 14px;
+a{
+  text-decoration: none;
 }
 
-div {
-  width: 100%;
-  margin: 20px;
+body {
+  font-family: sans-serif;
+}
+
+div.container{
+  margin-top: 20px;
+  width: 100;
+  padding: 5px 10px;
 }
 
 div li {
-  display: flex;
   align-items: center;
-}
-
-div li + li {
+  font-size: 20px;
   margin-top: 15px;
 }
 
@@ -26,7 +28,7 @@ button {
   background: #7159c1;
   color: #fff;
   border: 0;
-  padding: 10px 15px;
+  padding: 5px 10px;
   cursor: pointer;
   margin-top: 15px;
   font-weight: bold;
@@ -36,4 +38,18 @@ button {
 div li button {
   margin: 0 15px;
   background: #ca4949;
+}
+
+div li .techs {
+  width: 100%;
+  display: block;
+  list-style-type: lower-greek;
+}
+div li .techs li {
+  display: inline;
+  font-size: 12px;
+  margin-right: 5px;
+  background-color: #ccc;
+  padding: 2px 5px;
+  border-radius: 5px;
 }
